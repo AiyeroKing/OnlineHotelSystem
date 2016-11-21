@@ -1,53 +1,73 @@
 ﻿<!DOCTYPE html>
 <html>
-<head> @*头文件*@
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>@ViewBag.Title - 在线酒店预订系统</title>   @*网页标题，将显示在网页头名称中*@
-
+    <title> 在线酒店预订系统</title>   @*网页标题，将显示在网页头名称中*@
     @Styles.Render("~/Content/css")@*ASP.NET MVC 4 引入的CSS打包压缩功能。*@
     @Scripts.Render("~/bundles/modernizr")@*ASP.NET MVC 4 引入的modernizr打包压缩功能。*@
     <link href="~/Content/SharedCSS/_Layout.css" rel="stylesheet" />   @*连接样式表*@
-
 </head>
 
-
 <body>
-    <div class="navbar navbar-inverse  navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-              </div>
-            <div class="navbar-collapse collapse;">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("主页", "Index", "Home")</li>@*导航栏中的 “主页”*@
-                    <li>@Html.ActionLink("关于", "About", "Home")</li>@*导航栏中的 “关于”*@
-                    <li>@Html.ActionLink("联系方式", "Contact", "Home")</li>@*导航栏中的 “联系方式”*@
-                </ul>
-                @Html.Partial("_LoginPartial")   @*导航栏最右端的注册和登录选项。。。。。。。。链接到shared中的_LoginPartial.cshtml*@
-            </div>
-        </div>
-    </div>
-
-
-    <div class="container body-content">                      
+    @*↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓    顶部颜色条   ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓*@
+    <div class="container body-content">
         @RenderBody()
-        <hr />   @*分割线*@
-        <footer >
-            <p id="_Layoutlastshow">&copy; @DateTime.Now.Year - 我的 ASP.NET 应用程序</p>  @*最底下显示的*@
+        <footer style="height:20px;" class="nav  navbar-fixed-top text-right">
+            <table width="100%"; height="20"; style="background-color:#000000; font-family:YouYuan; margin:0;">
+                <tr>
+                    <td></td>
+                    <td width="2.5%"><img src="~/Images/酒店图标.jpg" height="25px;" /></td>
+                    <td width="10%"><p id="ttyyo">&nbsp;&nbsp;&nbsp;AiyeroKing大酒店</p></td>
+                    <td width="2.5%"><img src="~/Images/酒店图标.jpg" height="25px;" style="text-align:left" /></td>
+                    <td width="3%"><img src="~/Images/国棋.jpg" height="25px;" /></td>
+                    <td width="50%"></td>
+                    <td width="8%" align="center" style="background-color:#38B7FE">
+                        <a href="#"><img src="~/Images/创建您的账户.jpg" width="130" ; height="25" /></a>
+                    </td>
+                    <td width="5%" align="center" style="background-color:#DADBDD">
+                        <a href="#"><img src="~/Images/登录.jpg" style="height:25px" /></a>
+                    </td>
+                    <td width="10%"></td>
+                </tr>
+            </table>
+            @*<p style="color:aqua; background-color:crimson;"></p>*@
         </footer>
     </div>
+  @*↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓    颜色条   ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓*@
 
 
-    @Scripts.Render("~/bundles/jquery")  @*ASP.NET MVC 4 引入的jquery打包压缩功能。*@
-    @Scripts.Render("~/bundles/bootstrap") @*ASP.NET MVC 4 引入的bootstrap打包压缩功能。*@
-    @RenderSection("scripts", required: false)
 
+    <hr style="width:80%;text-align:center" />
+
+
+@*↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓    底部颜色条   ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓*@
+
+@*↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓    底部导航栏   ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓*@
+        <div class="container body-content" >
+            <footer style="height:70px;" class="nav  navbar-fixed-bottom text-center ">
+                <p id="lowdesign">
+                    <a href="#"class="Guangao " >联系我们</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"class="Guangao">招聘精英</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="#"class="Guangao">周边景区</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"class="Guangao">商务服务</a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"class="Guangao">写字楼</a>
+                </p>
+                   <p id="lowdesign1">
+                    &clubs;@DateTime.Now.Year -AiyeroKing大酒店版权所有 &nbsp;多数酒店为独立产权及独立经营。 粤ICP备13513002号-16 <br />地址：XXX市OOO路0号 邮编:000000
+                </p>
+            </footer>
+        </div>
+
+
+    
+
+
+
+
+@Scripts.Render("~/bundles/jquery")  @*ASP.NET MVC 4 引入的jquery打包压缩功能。*@
+@Scripts.Render("~/bundles/bootstrap") @*ASP.NET MVC 4 引入的bootstrap打包压缩功能。*@
+@RenderSection("scripts", required: false)
 </body>
+
 </html>

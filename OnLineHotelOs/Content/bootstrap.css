@@ -341,8 +341,8 @@ a {
 
 a:hover,
 a:focus {
-  color: #2a6496;
-  text-decoration: underline;
+  color: deepskyblue;
+  /*text-decoration: underline;*/
 }
 
 a:focus {

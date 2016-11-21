@@ -1,0 +1,10 @@
+a:hover,
+
+a:focus 
+{
+  
+   color: #fff;
+ 
+ /*text-decoration: underline;*/
+
+}

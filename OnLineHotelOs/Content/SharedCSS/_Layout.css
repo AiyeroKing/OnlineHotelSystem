@@ -3,3 +3,43 @@
 #_Layoutlastshow{
      text-align:center;
 }
+
+#lowdesign{
+    text-align:center;
+    color:#000000;
+    background-color:#CFCDC4;
+    font-size:13px;
+    font-weight:100;
+    font-family:YouYuan;
+    margin:0px;
+
+    height:32%;
+}
+#lowdesign1{
+    text-align:center;
+    color:#ffffff;
+    background-color:#796E5C;
+    font-size:13px;
+    font-weight:100;
+    font-family:YouYuan;
+    margin:0px;
+
+    height:56%;
+}
+.Guangao{
+    text-decoration:none;
+    color:#000000;
+    
+}
+Guangao:focus{
+    color:aqua;
+    text-decoration:none;
+} 
+a1 :hover{
+    text-decoration:none;
+}
+#ttyyo{
+    color:#ffd800;
+    text-align:left;
+    font-size:20px;
+}
