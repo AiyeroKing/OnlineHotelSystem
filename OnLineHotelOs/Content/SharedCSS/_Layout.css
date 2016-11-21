@@ -24,7 +24,7 @@
     font-family:YouYuan;
     margin:0px;
 
-    height:56%;
+    height:68%;
 }
 .Guangao{
     text-decoration:none;
@@ -41,5 +41,5 @@ a1 :hover{
 #ttyyo{
     color:#ffd800;
     text-align:left;
-    font-size:20px;
+    font-size:120%;
 }

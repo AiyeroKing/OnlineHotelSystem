@@ -1,4 +1,80 @@
-﻿@{
-    ViewBag.Title = "Home Page";
-}
+﻿<br />
+<div>
+    <link href="~/Content/dist/pageSwitch.min.css" rel="stylesheet" />
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+        }
 
+        html, body {
+            height: 100%;
+        }
+
+        #container {
+            width: 100%;
+            height: 750px;
+            overflow: hidden;
+        }
+
+        .sections, .section {
+            height: 100%;
+            width: 100%;
+        }
+
+        #container, .sections {
+            position: relative;
+        }
+
+        .section {
+            background-color: #000;
+            background-size: cover;
+            background-position: 50% 50%;
+            text-align: center;
+            color: white;
+        }
+
+        #section0 {
+            background-image: url('../../Content/images/1.jpg');
+        }
+
+        #section1 {
+            background-image: url('../../Content/images/2.jpg');
+        }
+
+        #section2 {
+            background-image: url('../../Content/images/3.jpg');
+        }
+
+        #section3 {
+            background-image: url('../../Content/images/4.jpg');
+        }
+    </style>
+    <div id="container">
+        <div class="sections">
+            <div class="section" id="section0"></div>
+            <div class="section" id="section1"></div>
+            <div class="section" id="section2"></div>
+            <div class="section" id="section3"></div>
+        </div>
+    </div>
+    <script src="~/Content/js/jquery-1.11.0.min.js"></script>
+
+    <script src="~/Content/dist/pageSwitch.min.js"></script>
+    <script>
+        $("#container").PageSwitch({
+            direction: 'horizontal',
+            easing: 'ease-in',
+            duration: 1000,
+            autoPlay: true,
+            loop: 'false'
+        });
+    </script>
+</div>
+
+
+
+
+
+<div style="width:900px; text-align:center">
+</div>

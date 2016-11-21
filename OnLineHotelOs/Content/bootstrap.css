@@ -762,7 +762,6 @@ pre code {
   margin-right: auto;
   margin-left: auto;
 }
-
 .container:before,
 .container:after {
   display: table;
@@ -926,7 +925,8 @@ pre code {
 
 @media (min-width: 768px) {
   .container {
-    max-width: 750px;
+    /*max-width: 750px;*/
+    max-width:100%;
   }
   .col-sm-1,
   .col-sm-2,
@@ -1080,7 +1080,8 @@ pre code {
 
 @media (min-width: 992px) {
   .container {
-    max-width: 970px;
+    /*max-width: 970px;*/
+     max-width:100%;
   }
   .col-md-1,
   .col-md-2,
@@ -1243,7 +1244,8 @@ pre code {
 
 @media (min-width: 1200px) {
   .container {
-    max-width: 1170px;
+    /*max-width: 1170px;*/
+     max-width:100%;
   }
   .col-lg-1,
   .col-lg-2,
@@ -3341,6 +3343,9 @@ input[type="button"].btn-block {
   border-top: 0 dotted;
   border-bottom: 4px solid #000000;
   content: "";
+
+  /*//-----------////*/
+  text-align:center;
 }
 
 .dropup .dropdown-menu,
@@ -3348,12 +3353,16 @@ input[type="button"].btn-block {
   top: auto;
   bottom: 100%;
   margin-bottom: 1px;
+    /*//-----------////*/
+  text-align:center;
 }
 
 @media (min-width: 768px) {
   .navbar-right .dropdown-menu {
     right: 0;
     left: auto;
+      /*//-----------////*/
+  text-align:center;
   }
 }
 
@@ -4028,6 +4037,8 @@ textarea.input-group-sm > .input-group-btn > .btn {
   min-height: 50px;
   margin-bottom: 20px;
   border: 1px solid transparent;
+    /*//-----------////*/
+  text-align:center;
 }
 
 .navbar:before,
@@ -4121,15 +4132,21 @@ textarea.input-group-sm > .input-group-btn > .btn {
     width: auto;
     border-top: 0;
     box-shadow: none;
+      /*//-----------////*/
+  text-align:center;
   }
   .navbar-collapse.collapse {
     display: block !important;
     height: auto !important;
     padding-bottom: 0;
     overflow: visible !important;
+      /*//-----------////*/
+  text-align:center;
   }
   .navbar-collapse.in {
     overflow-y: visible;
+      /*//-----------////*/
+  text-align:center;
   }
   .navbar-collapse .navbar-nav.navbar-left:first-child {
     margin-left: -15px;

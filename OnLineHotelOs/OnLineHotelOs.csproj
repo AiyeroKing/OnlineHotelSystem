@@ -208,19 +208,30 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\dist\pageSwitch.min.css" />
+    <Content Include="Content\dist\pageSwitch.min.js" />
+    <Content Include="Content\images\1.jpg" />
+    <Content Include="Content\images\2.jpg" />
+    <Content Include="Content\images\3.jpg" />
+    <Content Include="Content\images\4.jpg" />
+    <Content Include="Content\js\jquery-1.11.0.min.js" />
+    <Content Include="Content\js\jquery-2.1.1.min.js" />
     <Content Include="Content\SharedCSS\_Layout.css" />
+    <Content Include="Content\src\pageSwitch.js" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Images\创建您的账户.jpg" />
     <Content Include="Images\国棋.jpg" />
     <Content Include="Images\登录.jpg" />
+    <Content Include="Images\背景.jpg" />
     <Content Include="Images\酒店图标.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Content\src\pageSwitch.scss" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -246,12 +257,13 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\Location.cshtml" />
+    <Content Include="Views\Home\Introduce.cshtml" />
+    <Content Include="Views\Home\Subscrube.cshtml" />
+    <Content Include="Views\Home\Check.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Content\AccountCSS\" />
-    <Folder Include="Content\HomeCSS\" />
-    <Folder Include="Content\ManageCSS\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
