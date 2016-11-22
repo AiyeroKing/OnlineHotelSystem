@@ -221,6 +221,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\pic.gif" />
     <Content Include="Images\创建您的账户.jpg" />
     <Content Include="Images\国棋.jpg" />
     <Content Include="Images\登录.jpg" />

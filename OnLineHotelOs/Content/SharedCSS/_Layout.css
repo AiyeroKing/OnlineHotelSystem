@@ -7,8 +7,8 @@
 #lowdesign{
     text-align:center;
     color:#000000;
-    background-color:#CFCDC4;
     font-size:13px;
+    background-color:#ffffff;
     font-weight:100;
     font-family:YouYuan;
     margin:0px;
@@ -17,14 +17,28 @@
 }
 #lowdesign1{
     text-align:center;
-    color:#ffffff;
-    background-color:#796E5C;
+    color:#000000;
+    background-color:#ffffff;
     font-size:13px;
     font-weight:100;
     font-family:YouYuan;
     margin:0px;
 
     height:68%;
+}
+a1 :hover{
+    text-decoration:none;
+}
+#ttyyo{
+    color:#ffd800;
+    text-align:left;
+    font-size:120%;
+    padding-top:8px;
+}
+.bbbbbb {
+    font-size:20px;
+    font-family:SimHei;
+    font-weight:bold;
 }
 .Guangao{
     text-decoration:none;
@@ -35,11 +49,9 @@ Guangao:focus{
     color:aqua;
     text-decoration:none;
 } 
-a1 :hover{
-    text-decoration:none;
-}
-#ttyyo{
-    color:#ffd800;
-    text-align:left;
-    font-size:120%;
+.Guangaolanmu{
+    color:#000000;
+    font-family:KaiTi;
+    font-weight:300;
+
 }
