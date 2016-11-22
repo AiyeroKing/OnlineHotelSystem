@@ -206,6 +206,7 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\ALLcss\AlL.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\dist\pageSwitch.min.css" />
@@ -221,12 +222,15 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\groupmap.jpg" />
     <Content Include="Images\pic.gif" />
+    <Content Include="Images\timg.jpg" />
     <Content Include="Images\创建您的账户.jpg" />
     <Content Include="Images\国棋.jpg" />
     <Content Include="Images\登录.jpg" />
     <Content Include="Images\背景.jpg" />
     <Content Include="Images\酒店图标.jpg" />
+    <Content Include="Images\齿轮.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
