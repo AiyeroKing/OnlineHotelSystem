@@ -35,9 +35,6 @@ namespace OnLineHotelOs.Controllers
         {
             return View();
         }
-        public ActionResult Contact()/*联系方式*/
-        {
-            return View();
-        }
+
     }
 }
