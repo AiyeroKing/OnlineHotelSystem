@@ -1,0 +1,69 @@
+﻿@{
+    ViewBag.Title = "Index";
+    var articles = ViewBag.RoomArticles as List<RoomArticle>;
+
+}
+<br /><br /><br />
+<link href="~/Content/ALLcss/AlL.css" rel="stylesheet" />
+<link href="~/Content/dist/wan-spinner.css" rel="stylesheet" />
+<div class="container">
+    <div class="row clearfix">
+        <div class="col-md-12 column">
+            <ul class="breadcrumb">
+                <li>
+                    <a href="#">酒店首页</a>
+                </li>
+                <li class="active">
+                    房间预约查询
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <h2 style="text-align:center;font-family:YouYuan">房间预约查询</h2>
+<div style="text-align:center">
+    <table  style="text-align:center" width="100%;">
+        <tr>
+            <td width="42%">&nbsp;</td>
+            <td>
+                <table>
+                    <tr>
+                        <td align="center">
+                            <fieldset>
+                                <form method="get" action="@Url.Action("index")">搜索入住人姓名： <input type="text" name="look" value="@ViewBag.look" />  <input type="submit" value="搜索" /> </form>
+                            </fieldset>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">
+                            <br />
+                            <ol>
+                                @foreach (var item in articles)
+                                {
+                                    <li>
+                                        <a href="@Url.Action("show",new {id =item.Id })">@item.Subject</a>
+
+                                        | @Html.ActionLink("[修改此预约]", "Change", new { id = item.Id }) --
+                                        @Html.ActionLink("[删除此预约]", "Delete", new { id = item.Id }) |
+                                        @*<a href="Blog/Show/@item.Id">@item.Subject &nbsp;&nbsp;&nbsp;</a>*@
+                                        <hr />
+                                    </li>
+                                    
+                                }
+                            </ol>
+                        </td>
+                    </tr>
+                </table>
+                </td>
+            <td></td>
+        </tr>
+    </table>
+
+</div>
+
+<table>
+    <tr style="height:250px;">
+        <td>&nbsp;</td>
+    </tr>
+</table>
