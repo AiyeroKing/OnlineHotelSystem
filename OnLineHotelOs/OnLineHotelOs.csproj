@@ -227,6 +227,7 @@
     <Content Include="Content\js\jquery-2.1.1.min.js" />
     <Content Include="Content\SharedCSS\_Layout.css" />
     <Content Include="Content\src\pageSwitch.js" />
+    <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
