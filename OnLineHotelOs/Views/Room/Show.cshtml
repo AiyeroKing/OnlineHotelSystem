@@ -1,0 +1,90 @@
+﻿<br /><br /><br />
+@model RoomArticle
+@{
+    ViewBag.Title = "Show";
+}
+
+<h2>&nbsp;&nbsp;&nbsp;&nbsp; @Model.Subject</h2>
+<div>&nbsp;&nbsp;&nbsp;&nbsp;发表时间: @Model.DateCreated </div>
+<link href="~/Content/ALLcss/AlL.css" rel="stylesheet" />
+<link href="~/Content/dist/wan-spinner.css" rel="stylesheet" />
+<div class="container">
+    <div class="row clearfix">
+        <div class="col-md-12 column">
+            <ul class="breadcrumb">
+                <li>
+                    @Html.ActionLink("酒店首页", "Index", "Home")
+                </li>
+                <li class="active">
+                    查看预约信息
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div>
+    <p style="text-align:center;font-family:YouYuan;font-size:35px;color:orange"><strong>以下属于订单信息</strong></p>
+</div>
+
+
+
+    <table align="center" width="1000px;" style="background-color:#ffffff;">
+        <tr>
+            <td>
+                <table width="100%">
+                    <tr>
+                        <td colspan="2"><img src="~/Images/People/购买人信息.jpg" /></td>
+                    </tr>
+                    <tr>
+                        <td class="tdo">客户姓名：</td>
+                        <td class="todo">@Model.Khname</td>
+                    </tr>
+                    <tr>
+                        <td class="tdo">客户年龄：</td>
+                        <td class="todo">@Model.Khage</td>
+                    </tr>
+                    <tr>
+                        <td class="tdo">客户性别：</td>
+                        <td class="todo">@Model.Khsex</td>
+                    </tr>
+                    <tr>
+                        <td class="tdo">客户身份证号码：</td>
+                        <td class="todo">@Model.Khid</td>
+                    </tr>
+                    <tr>
+                        <td class="tdo">客户联系方式：</td>
+                        <td class="todo">@Model.Khphone</td>
+                    </tr>
+                    <tr style="height:10%">
+                        <td colspan="2"><img src="~/Images/People/订单详情.jpg" /></td>
+                    </tr>
+                    <tr>
+                        <td class="tdo">入住人姓名：</td>
+                        <td class="todo">@Model.Subject</td>
+                    </tr>
+                    <tr>
+                        <td class="tdo">入住人身份证号码：</td>
+                        <td class="todo">@Model.Rzid</td>
+                    </tr>
+                    <tr>
+                        <td class="tdo">入住时间：</td>
+                        <td class="todo">@Model.Rzdate</td>
+                    </tr>
+                    <tr>
+                        <td class="tdo">退房时间：</td>
+                        <td class="todo">@Model.RzTfdate</td>
+                    </tr>
+                    <tr>
+                        <td class="tdo">预定房间号：</td>
+                        <td class="todo">@Model.Roomid </td>
+                    </tr>
+                    <tr>
+                        <td class="tdo">备注：</td>
+                        <td class="todo">@Model.Body</td>
+                    </tr>
+                   
+                </table>
+            </td>
+        </tr>
+    </table>
+<br /><br /><br /><br />

@@ -1,0 +1,114 @@
+﻿<br /><br /><br />
+<link href="~/Content/ALLcss/AlL.css" rel="stylesheet" />
+<link href="~/Content/dist/wan-spinner.css" rel="stylesheet" />
+<div class="container">
+    <div class="row clearfix">
+        <div class="col-md-12 column">
+            <ul class="breadcrumb">
+                <li>
+                    @Html.ActionLink("酒店首页", "Index", "Home")
+                </li>
+                <li class="active">
+                    预订房间修改
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div>
+    <p style="text-align:center;font-family:YouYuan;font-size:35px;color:orange"><strong>请修改以下订单信息</strong></p>
+</div>
+
+
+<form action="/Room/ChangeSave" method="post">
+    <input type="hidden" value="@Model.Id" name="Id" />
+    <table align="center" width="1000px;" style="background-color:#ffffff;">
+        <tr>
+            <td>
+                <table width="100%">
+                    <tr>
+                        <td colspan="2"><img src="~/Images/People/购买人信息.jpg" /></td>
+                    </tr>
+                    <tr>
+                        <td class="tdo">客户姓名：</td>
+                        <td><input type="text" name="Khname" value="" class="kjhiodsad" placeholder="@Model.Khname" />
+                        <span class="kjkjkjjj">&nbsp;&nbsp;&nbsp;修改前：@Model.Khname</span></td>
+                    </tr>
+                    <tr>
+                        <td class="tdo">客户年龄：</td>
+                        <td><input type="text" name="Khage" value="" class="kjhiodsad" style="width:50px;" placeholder="@Model.Khage" />
+                        <span class="kjkjkjjj">&nbsp;&nbsp;&nbsp;修改前：@Model.Khage</span></td>
+                    </tr>
+                    <tr>
+                        <td class="tdo">客户性别：</td>
+                        <td><select class="kjhiodsad" id="Select1" name="Khsex"><option>请输入性别</option><option value="男">男</option><option value="女">女</option></select>
+                        <span class="kjkjkjjj">&nbsp;&nbsp;&nbsp;修改前：@Model.Khsex</span></td>
+                    </tr>
+                    <tr>
+                        <td class="tdo">客户身份证号码：</td>
+                        <td><input type="text" name="Khid" value="" class="kjhiodsad" style="width:250px;" placeholder="@Model.Khid" />
+                        <span class="kjkjkjjj">&nbsp;&nbsp;&nbsp;修改前：@Model.Khid</span></td>
+                    </tr>
+                    <tr>
+                        <td class="tdo">客户联系方式：</td>
+                        <td><input type="text" name="Khphone" value="" class="kjhiodsad" placeholder="@Model.Khphone" />
+                        <span class="kjkjkjjj">&nbsp;&nbsp;&nbsp;修改前：@Model.Khphone</span></td>
+                    </tr>
+                    <tr style="height:10%">
+                        <td colspan="2"><img src="~/Images/People/订单详情.jpg" /></td>
+                    </tr>
+                    <tr>
+                        <td class="tdo">入住人姓名：</td>
+                        <td><input type="text" name="Subject" value="" class="kjhiodsad" style="color:crimson;background-color:mediumturquoise" placeholder="@Model.Subject" /><span class="kjkjkjjj">&nbsp;&nbsp;&nbsp;修改前：@Model.Subject</span></td>
+                    </tr>
+                    <tr>
+                        <td class="tdo">入住人身份证号码：</td>
+                        <td><input type="text" name="Rzid" value="" class="kjhiodsad" style="width:250px;color:crimson;background-color:mediumturquoise"/>
+                        <span class="kjkjkjjj">&nbsp;&nbsp;&nbsp;修改前：@Model.Rzid</span></td>
+                    </tr>
+                    <tr>
+                        <td class="tdo">入住时间：</td>
+                        <td><input type="date" name="Rzdate" id="date" value="" class="kjhiodsad" style="color:crimson;background-color:mediumturquoise" >
+                        <span class="kjkjkjjj">&nbsp;&nbsp;&nbsp;修改前：@Model.Rzdate</span></td>
+                    </tr>
+                    <tr>
+                        <td class="tdo">退房时间：</td>
+                        <td><input type="date" name="RzTfdate" id="date" value="" class="kjhiodsad" style="color:crimson;background-color:mediumturquoise">
+                        <span class="kjkjkjjj">&nbsp;&nbsp;&nbsp;修改前：@Model.RzTfdate</span></td>
+                    </tr>
+                    <tr>
+                        <td class="tdo">预定房间号：</td>
+                        <td>
+                            <select id="Select1" name="Roomid" class="kjhiodsad" style="width:220px;color:crimson;background-color:mediumturquoise">
+                                <option value="@Model.Roomid">请选择套房名称</option>
+                                <option value="@Model.Roomid">鸟趣双人房 ￥500.00/间/晚</option>
+                                <option value="@Model.Roomid">狩猎房 ￥600.00/间/晚</option>
+                                <option value="@Model.Roomid">鸟趣大床房 ￥800.00/间/晚</option>
+                                <option value="@Model.Roomid">标准家庭套房 ￥800.00/间/晚</option>
+                                <option value="@Model.Roomid">高级套房 ￥1000.00/间/晚</option>
+                                <option value="@Model.Roomid">野趣套房 ￥1200.00/间/晚</option>
+                                <option value="@Model.Roomid">白虎套房 ￥1300.00/间/晚</option>
+                                <option value="@Model.Roomid">高级家庭套房 ￥1500.00/间/晚</option>
+                                <option value="@Model.Roomid">贵宾套房 ￥2000.00/间/晚</option>
+                            </select>
+                            <span class="kjkjkjjj">&nbsp;&nbsp;&nbsp;修改前：@Model.Roomid</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tdo">备注：</td>
+                        <td>
+                            <textarea name="Body" rows="6" class="kjhiodsad" style="color:crimson;background-color:mediumturquoise;width:600px;" >@Model.Body</textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center"><button type="reset" class="btn btn-warning">撤销更改</button></td>
+                        <td align="center">
+                            <button type="submit" class="btn btn-primary">提交并保存</button>
+                         </td>
+                        <td align="left"></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</form>

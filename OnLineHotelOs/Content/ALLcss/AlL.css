@@ -7,3 +7,29 @@ h1 {
     font-family:YouYuan;
     color:crimson
 }
+.tdo{
+    text-align:right;
+    width:300px;
+    height:40px;
+    font-weight:700;
+    font-family:YouYuan;
+}
+.kjhiodsad{
+    border-color:cadetblue; 
+}
+.kjkjkjjj{
+    font-family:SimHei;
+    width:400px;
+    text-align:right;
+    font-weight:800;
+    font-size:8px;
+    color:brown;
+}
+.todo {
+    text-align:left;
+    height:40px;
+    font-weight:700;
+    font-family:YouYuan;
+    font-size:15px;
+    color:coral;
+}

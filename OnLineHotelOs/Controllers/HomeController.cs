@@ -22,16 +22,13 @@ namespace OnLineHotelOs.Controllers
         {
             return View();
         }
-
-        public ActionResult Subscrube()/*住房预约*/
-        {
-            return View();
-        }
-        public ActionResult Check()/*住房查看*/
-        {
-            return View();
-        }
         public ActionResult About()/*关于我们*/
+        {
+            return View();
+        }
+
+
+        public ActionResult Subscrube()/*房间展示*/
         {
             return View();
         }

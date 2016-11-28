@@ -16,7 +16,7 @@ namespace OnLineHotelOs
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+                defaults: new { controller = "Register", action = "LoginView", id = UrlParameter.Optional }
             );
         }
     }

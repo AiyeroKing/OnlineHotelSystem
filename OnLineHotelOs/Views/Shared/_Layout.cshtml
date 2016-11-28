@@ -19,11 +19,11 @@
             <table width="100%" ; height="20" ; style="background-color:#000000; font-family:YouYuan; margin:0;">
                 <tr>
                     <td></td>
-                    <td width="2.5%"><img src="~/Images/酒店图标.jpg" height="25px;" /></td>
-                    <td width="10%"><p id="ttyyo">&nbsp;&nbsp;&nbsp;AiyeroKing大酒店</p></td>
-                    <td width="2.5%"><img src="~/Images/酒店图标.jpg" height="25px;" style="text-align:left" /></td>
+                    <td width="5%"><img src="~/Images/酒店图标.jpg" height="25px;" /></td>
+                    <td width="15%"><p id="ttyyo">&nbsp;&nbsp;&nbsp;AiyeroKing大酒店</p></td>
+                    <td width="5%"><img src="~/Images/酒店图标.jpg" height="25px;" style="text-align:left" /></td>
                     <td width="3%"><img src="~/Images/国棋.jpg" height="25px;" /></td>
-                    <td width="50%"></td>
+                    <td width="30"></td>
                     <td width="12%" align="center" style="color:aqua;padding-top:8px;">
                         <p>订房热线: 100 110 1111</p>
                     </td>
@@ -54,14 +54,18 @@
                     <div class="navbar-collapse collapse; text-center" style="text-align:center">
                         @*-------------------------------------------------------------------------------------------------->>>>>>>>>主导航栏*@
                         <ul class="nav text-center navbar-nav navbar-left" style="text-align:center">
-                            <li style="width:600px;">&nbsp;</li>
-                            <li style="text-align:center">@Html.ActionLink("酒店首页", "Index", "Home")</li>@*导航栏中的 “主页”*@
-                            <li style="text-align:center">@Html.ActionLink("酒店位置", "Location", "Home")</listyle="text-align:center">
-                            <li style="text-align:center">@Html.ActionLink("酒店介绍", "Introduce", "Home")</li>
-                            <li style="text-align:center">@Html.ActionLink("住房预约", "Subscrube", "Home")</li>
-                            <li style="text-align:center">@Html.ActionLink("预约操作", "Check", "Home")</li>
-                            <li style="text-align:center">@Html.ActionLink("联系我们", "About", "Home")</li>@*导航栏中的 “关于”*@                        </ul>
-                    </div>@*----------------------------------------------------------------------------------------------------------------------------------->>>>>>>>>>>>>结束*@
+                                <li style="width:625px;">&nbsp;</li>
+                                <li style="text-align:center">@Html.ActionLink("酒店首页", "Index", "Home")</li>@*导航栏中的 “主页”*@
+                                <li style="text-align:center">@Html.ActionLink("酒店位置", "Location", "Home")</li>
+                                <li style="text-align:center">@Html.ActionLink("酒店介绍", "Introduce", "Home")</li>
+                                <li style="text-align:center">@Html.ActionLink("房间展示", "Subscrube", "Home")</li>
+                                <li style="text-align:center">@Html.ActionLink("房间预约","AddRoom","Room")</li>
+                                <li style="text-align:center">@Html.ActionLink("预约显示", "Index", "Room")</li>
+                                <li style="text-align:center">@Html.ActionLink("联系我们", "About", "Home")</li>@*导航栏中的 “关于”*@
+                           
+                         </ul>
+                   
+                     </div>@*----------------------------------------------------------------------------------------------------------------------------------->>>>>>>>>>>>>结束*@
                 </div>@*----------------------------------------------------------------------->>>>>>>>>>>>容器标签结束*@
             </div>
         </footer>
